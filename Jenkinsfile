@@ -14,7 +14,7 @@ pipeline {
         }
         stage('countinus deployement') {
             steps {
-                sh 'cp target/hello-1.0.war /opt/apache-tomcat-9.0.62/webapps'
+                sh 'cp target/hello-1.0.war /opt/apache-tomcat-9.0.60/webapps'
             }
         }
     }
