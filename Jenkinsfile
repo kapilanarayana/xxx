@@ -14,7 +14,7 @@ pipeline {
         }
         stage('countinus deployement') {
             steps {
-                sh 'sshpass -p "karthik" scp target/hello-1.0.war karthik@172.17.0.3:/opt/apache-tomcat-9.0.62/webapps'
+                sh 'cp target/hello-1.0.war /opt/apache-tomcat-9.0.62/webapps'
             }
         }
     }
